@@ -1,0 +1,4 @@
+steps :
+    1-->>> create seeders and factories
+    2-->>> create form request for each table
+    3-->>> start with routes and controllers

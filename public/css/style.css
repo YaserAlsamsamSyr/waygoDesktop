@@ -1,0 +1,1228 @@
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات الخطوط */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* إعدادات العنوان والترويسة */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+nav form {
+    margin: 0;
+}
+
+nav a, nav button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover, nav button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* إعدادات الروابط والأزرار */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* إعدادات استجابة التصميم */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات الخطوط والألوان */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* إعدادات العنوان والترويسة */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* إعدادات الروابط والأزرار */
+.trips {
+    width: 100%;
+}
+
+.trip-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.trip-form label {
+    font-weight: bold;
+}
+
+.trip-form input[type="text"],
+.trip-form input[type="date"],
+.trip-form select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    align-self: flex-start;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.alert.alert-danger {
+    background-color: #ffdddd;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.alert.alert-danger ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.alert.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* إعدادات استجابة التصميم */
+@media (max-width: 600px) {
+    .trip-form {
+        padding: 15px;
+    }
+
+    .submit-button {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}
+/* إعدادات التصميم لصفحة عرض المستخدمين */
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تصميم الروابط */
+.back-link,
+.add-customer-link {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover,
+.add-customer-link:hover {
+    background-color: #0056b3;
+}
+
+/* تصميم الجدول */
+.customer-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.customer-table th,
+.customer-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.customer-table th {
+    background-color: #f2f2f2;
+}
+
+/* تصميم الزر للحذف */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* رسالة عندما لا يوجد مستخدمين */
+.no-customer-msg {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+/* إعدادات التصميم لصفحة إضافة الباص */
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* تحسين تنسيق الروابط */
+.back-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق رسائل الخطأ */
+.error-message {
+    color: red;
+    margin: 20px 0;
+}
+
+/* تحسين تنسيق النموذج */
+.bus-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.bus-form label {
+    font-weight: bold;
+}
+
+.bus-form input[type="text"],
+.bus-form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.bus-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.bus-form input[type="submit"]:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+/* إعدادات التصميم لصفحة عرض الباصات */
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* تحسين تنسيق الروابط */
+.home-link,
+.create-bus-link,
+.update-bus-link,
+.bus-trips-link {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover,
+.create-bus-link:hover,
+.update-bus-link:hover,
+.bus-trips-link:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق الرسالة عند عدم وجود باصات */
+.no-buses-msg {
+    color: red;
+    margin-top: 20px;
+}
+
+/* تحسين تنسيق بطاقة الباص */
+.bus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bus-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+}
+
+.bus-info {
+    margin-bottom: 10px;
+}
+
+/* تحسين تنسيق زر الحذف */
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق العنوان */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* تحسين تنسيق الرسالة عند عدم وجود باصات */
+.no-buses-msg {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* تحسين تنسيق بطاقة الباص */
+.bus-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.bus-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.bus-info {
+    margin-bottom: 10px;
+}
+
+/* تحسين تنسيق الأزرار والروابط في نفس السطر */
+.bus-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.update-bus-link,
+.bus-trips-link {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.update-bus-link:hover,
+.bus-trips-link:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق الرسالة عند عدم وجود مدن */
+.no-cities-msg {
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* تحسين تنسيق رابط إضافة مدينة */
+.add-city-link {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.add-city-link:hover {
+    background-color: #218838;
+}
+
+/* تحسين تنسيق بطاقات المدن */
+.city-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.city-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+.city-name {
+    margin-bottom: 10px;
+}
+.city-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.update-city-link {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.update-city-link:hover {
+    background-color: #0056b3;
+}
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق العنوان */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* تحسين تنسيق الرسالة عند وجود أخطاء */
+.alert.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert.alert-danger ul {
+    list-style-type: none;
+}
+
+.alert.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* تحسين تنسيق الرسالة عند وجود مدينة مكررة */
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* تحسين تنسيق نموذج إضافة مدينة */
+.city-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.city-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.city-form input[type="text"],
+.city-form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.city-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.city-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق الرابط للرجوع للصفحة السابقة */
+.back-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.back-link:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+/* تحسين تنسيق العنوان */
+h1 {
+    margin-bottom: 20px;
+}
+
+/* تحسين تنسيق الرسالة عند وجود أخطاء */
+.alert.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.alert.alert-danger ul {
+    list-style-type: none;
+}
+
+.alert.alert-danger li {
+    margin-bottom: 5px;
+}
+
+/* تحسين تنسيق الرسالة عند وجود مدينة مكررة */
+.error-msg {
+    color: red;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* تحسين تنسيق نموذج تحديث مدينة */
+.city-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.city-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.city-form input[type="text"],
+.city-form input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.city-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.city-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+/* Reset بعض الإعدادات الافتراضية للمتصفح */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* تحسين التنسيق العام للصفحة */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.trips {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.trip-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trip-info {
+    margin-bottom: 20px;
+}
+
+.trip-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.show-customers-link {
+    color: white;
+    text-decoration: none;
+    background-color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.show-customers-link:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.home-link:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.alert {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+form.bus-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.submit-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.bus-trips {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trip {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.trip p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.trip p strong {
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+
+
+
+
+.back-link {
+    background-color: #007bff;
+}
+
+.add-link {
+    background-color: #28a745;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.no-customers {
+    color: red;
+    text-align: center;
+}
+
+
+
+.success-message {
+    color: green;
+}
+
+.error-message {
+    color: red;
+}
+
+.alert {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.customer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1em;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
