@@ -22,12 +22,17 @@ class UpdateController extends Controller
 
     public function updateCity(CityFormRequest $req){
             $req->validated();
-            $city=City::where('name',$req->cityName)->get();
-            if(sizeof($city)>0)
-                 return redirect('/city/'.$req->cityId.'?msg=true');
-            $city=City::find($req->cityId);
-            $city->name=$req->cityName;
-            $city->save();
+            $city=auth()->user()->cities()->where('name',$req->cityName)->get();
+            if(sizeof($city)==0){
+                $city=City::where('name',$req->cityName)->get();
+                auth()->user()->cities()->detach($req->cityId);
+                if(sizeof($city)==0){
+                    $city=City::create(['name'=>$req->cityName]);
+                    auth()->user()->cities()->attach($city);    
+                } else{
+                    auth()->user()->cities()->attach($city[0]);
+                }    
+            }
             return redirect('/city');
     }
 }
