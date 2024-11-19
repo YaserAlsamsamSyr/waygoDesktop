@@ -35,10 +35,9 @@ class CityController extends Controller
         $user=User::find(auth()->id());
         if(sizeof($newCity)==0){
             $newCity=City::create(['name'=>$req->cityName]);
-        $user->cities()->attach($newCity->id);
-        }
-        $user->cities()->attach($newCity[0]->id);
-        
+            $user->cities()->attach($newCity->id);
+        } else
+            $user->cities()->attach($newCity[0]->id);
         return redirect('/city');
     }
 
